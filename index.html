@@ -111,6 +111,13 @@ footer .line{font-family:var(--f-serif);font-size:.92rem;color:#4a4855}
 .tl .pj em{font-style:normal;color:var(--charcoal);font-weight:500}
 .fg{display:flex;flex-direction:column;gap:14px}
 .fg h3{margin:0 0 6px;font-family:var(--f-latin);font-size:.66rem;letter-spacing:.2em;color:var(--muted);font-weight:600}
+.fl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.fl li{display:grid;grid-template-columns:7.5rem 1fr;gap:4px 12px;padding:10px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.fl li:last-child{border-bottom:0}
+.fl b{font-family:var(--f-latin);font-weight:600;font-size:.8rem;color:var(--lav-deep)}
+.fl span{font-family:var(--f-latin);font-size:.9rem;min-width:0}
+.fl em{display:block;font-style:normal;color:var(--muted);font-size:.8rem}
+@media (max-width:380px){.fl li{grid-template-columns:1fr}}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chips span{font-size:.78rem;padding:5px 11px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--charcoal)}
 .more{margin:8px 0 0;font-size:.74rem;line-height:1.7;color:var(--muted)}
@@ -143,13 +150,12 @@ footer .line{font-family:var(--f-serif);font-size:.92rem;color:#4a4855}
   </div>
 
   <section aria-labelledby="h-works">
-    <div class="sec-h"><span>01</span><h2 id="h-works">SELECTED WORKS</h2></div>
-    <div class="fg">
-      <div><h3>FILM · VFX · 27편</h3><div class="chips"><span>반도</span><span>백두산</span><span>싱크홀</span><span>#살아있다</span><span>옥자</span><span>아수라</span><span>마녀</span><span>안시성</span></div></div>
-      <div><h3>COMMERCIAL</h3><div class="chips"><span>Samsung <small>Gnusmas</small></span><span>Hyundai <small>GN7</small></span><span>Sulwhasoo <small>6th Generation</small></span><span>P4G 정상회의 <small>정부 홍보 영상</small></span></div></div>
-      <div><h3>GAME CINEMATIC</h3><div class="chips"><span>Summoners War <small>트레일러</small></span><span>ELYON</span></div></div>
-      <p class="more">그 밖의 영화 VFX: 카운트 · 해적: 도깨비 깃발 · 히트맨 · 가장 보통의 연애 · 타짜: 원 아이드 잭 · 클로젯 · 미스터 주: 사라진 VIP · 스윙키즈 · 레슬러 · 물괴 · 브이아이피 · 장산범 · 불한당: 나쁜 놈들의 세상 · 보안관 · 더 킹 · 덕혜옹주 · 유럽공략 · 삼체 · Once Upon a Time</p>
-    </div>
+    <div class="sec-h"><span>01</span><h2 id="h-works">FILMOGRAPHY</h2></div>
+    <ul class="fl">
+      <li><b>Commercial</b><span>Samsung, Hyundai GN7, Sulwhasoo, P4G Summit and more</span></li>
+      <li><b>Game Cinematic</b><span>Summoners War, ELYON and more</span></li>
+      <li><b>Feature Film VFX</b><span>Okja, Peninsula, The Witch, The Last Princess and more <em>27 feature films</em></span></li>
+    </ul>
   </section>
 
   <section aria-labelledby="h-about">
