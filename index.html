@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Luminode Studio · 김규연</title>
+<meta name="description" content="영화 VFX·게임 시네마틱·광고 8년차 프로듀서 김규연의 AI 영상 스튜디오, Luminode Studio.">
+<meta property="og:title" content="Luminode Studio · 김규연 프로듀서">
+<meta property="og:description" content="이야기에서 영상까지. 8년차 영상 프로듀서의 AI 영상 스튜디오.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tyyeeon.github.io/luminode/">
+<style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}*,*::before,*::after{box-sizing:inherit}body{margin:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;800&family=Noto+Serif+KR:wght@500&family=Montserrat:wght@400;500;600&display=swap">
+<style>
+/* Layout: 루에 승인 시안 "펄화이트·라벤더" — one phone column, planet hero, numbered sections, pill link rows. Deliberately single light look. */
+:root{
+  color-scheme:light;
+  --pearl:#F8F7FC; --card:#ffffff; --charcoal:#2E2E34; --muted:#6c6a78; --line:#e7e3f1;
+  --lavender:#C9B4FF; --lav-deep:#8f74e0; --lav-soft:#efe9ff;
+  --f-body:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+  --f-serif:"Noto Serif KR","Batang",serif;
+  --f-latin:"Montserrat","Helvetica Neue",Arial,sans-serif;
+}
+html{background:var(--pearl)}
+body{background:radial-gradient(120% 60% at 80% 0%,#efe9ff 0%,var(--pearl) 55%) var(--pearl);color:var(--charcoal);font-family:var(--f-body);line-height:1.6;word-break:keep-all;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:20px 40px}
+.wrap{max-width:460px;margin:0 auto;display:flex;flex-direction:column;gap:22px}
+
+header{display:flex;align-items:center;justify-content:space-between;gap:12px}
+.logo{display:flex;align-items:center;gap:10px}
+.mark{width:36px;height:36px;border:1.8px solid var(--charcoal);border-radius:10px;display:grid;place-items:center;flex:none}
+.mark svg{width:16px;height:16px}
+.logo b{font-family:var(--f-latin);font-weight:600;letter-spacing:.12em;font-size:.86rem;display:block;line-height:1.2}
+.logo small{font-family:var(--f-latin);font-size:.56rem;letter-spacing:.2em;color:var(--muted)}
+.loc{font-family:var(--f-latin);font-size:.6rem;letter-spacing:.22em;color:var(--muted)}
+
+.hero{position:relative;min-height:190px;display:flex;flex-direction:column;justify-content:center;gap:10px;padding-right:40%}
+.hero h1{font-weight:800;font-size:2.05rem;line-height:1.18;margin:0;letter-spacing:-.02em;text-wrap:balance}
+.hero h1 em{font-style:normal;color:var(--lav-deep)}
+.hero p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
+.planet{position:absolute;right:-8px;top:50%;transform:translateY(-50%);width:44%;max-width:200px;aspect-ratio:1;pointer-events:none}
+.planet .ball{position:absolute;inset:22%;border-radius:50%;
+  background:radial-gradient(circle at 34% 30%,#ffffff 0%,#e9e3fb 28%,#bcb0e6 62%,#8d82c2 100%);
+  box-shadow:0 0 40px 6px rgba(201,180,255,.45), inset -10px -14px 26px rgba(80,64,140,.25)}
+.planet .ball::after{content:"";position:absolute;inset:0;border-radius:50%;opacity:.35;
+  background:repeating-radial-gradient(circle at 60% 60%,rgba(255,255,255,.35) 0 1px,transparent 1px 3px)}
+.planet svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+@media (prefers-reduced-motion:no-preference){.planet .orbit{animation:spin 40s linear infinite;transform-origin:50% 50%}}
+@keyframes spin{to{transform:rotate(360deg)}}
+
+section{display:flex;flex-direction:column;gap:12px;border-top:1px solid var(--line);padding-top:16px}
+.sec-h{display:flex;align-items:baseline;gap:14px}
+.sec-h span{font-family:var(--f-latin);font-size:.7rem;color:var(--lav-deep);font-weight:600}
+.sec-h h2{margin:0;font-family:var(--f-latin);font-size:.72rem;letter-spacing:.2em;font-weight:600;color:var(--charcoal)}
+.sec-h .who{margin-left:auto;font-size:1rem;font-weight:700;letter-spacing:0}
+.sec-h .who i{font-style:normal;font-weight:400;color:var(--muted)}
+.about{margin:0;font-size:.9rem;color:#4a4855}
+
+.cv{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.cv li{padding:10px 0;border-bottom:1px solid var(--line);display:flex;flex-direction:column;gap:2px}
+.cv li:last-child{border-bottom:0}
+.cv .co{display:flex;align-items:baseline;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.cv b{font-family:var(--f-latin);font-weight:600;font-size:.95rem}
+.cv i{font-style:normal;font-family:var(--f-latin);font-size:.7rem;color:var(--lav-deep)}
+.cv p{margin:0;font-size:.84rem;color:#4a4855}
+.cv small{color:var(--muted);font-size:.78rem}
+.skills{display:flex;flex-wrap:wrap;gap:6px}
+.skills span{font-size:.74rem;padding:4px 10px;border-radius:999px;background:var(--lav-soft);color:var(--lav-deep)}
+.svc{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
+.svc li{display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:start;padding:10px 0;border-bottom:1px solid var(--line)}
+.svc li:last-child{border-bottom:0}
+.num{width:34px;height:34px;border-radius:50%;background:var(--lav-soft);display:grid;place-items:center;font-family:var(--f-latin);font-size:.74rem;font-weight:600;color:var(--lav-deep)}
+.svc b{display:block;font-weight:700;font-size:.95rem}
+.svc small{display:block;color:var(--muted);font-size:.82rem;line-height:1.5}
+
+.links,.contact{display:flex;flex-direction:column;gap:8px}
+.pill{display:grid;grid-template-columns:26px 1fr auto;gap:12px;align-items:center;padding:10px 14px;border:1px solid var(--line);border-radius:999px;background:var(--card);color:var(--charcoal);text-decoration:none;font-size:.84rem;min-width:0}
+.pill span.t{min-width:0;overflow-wrap:anywhere;user-select:text}
+a.pill:hover,a.pill:focus-visible{border-color:var(--lavender);outline:none;box-shadow:0 0 0 3px var(--lav-soft)}
+.ico{width:24px;height:24px;border-radius:6px;display:grid;place-items:center;color:#fff;font-family:var(--f-latin);font-weight:700;font-size:.72rem}
+.ico svg{width:15px;height:15px}
+.chev{color:var(--muted);font-size:1rem}
+button.copy{border:0;background:transparent;color:var(--muted);cursor:pointer;padding:4px;border-radius:6px;display:grid;place-items:center}
+button.copy:hover,button.copy:focus-visible{color:var(--lav-deep);outline:2px solid var(--lav-soft)}
+button.copy svg{width:16px;height:16px}
+.toast{font-size:.72rem;color:var(--lav-deep);font-family:var(--f-latin)}
+
+footer{text-align:center;display:flex;flex-direction:column;gap:6px;padding-top:6px}
+footer .tag{font-family:var(--f-latin);font-size:.62rem;letter-spacing:.32em;color:var(--muted)}
+footer .line{font-family:var(--f-serif);font-size:.92rem;color:#4a4855}
+</style>
+
+<main class="wrap">
+  <header>
+    <div class="logo">
+      <span class="mark" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="#2E2E34" stroke-width="1.8" stroke-linecap="round"><path d="M3.5 13V8a4.5 4.5 0 0 1 9 0v5"/></svg></span>
+      <span><b>LUMINODE STUDIO</b><small>AI VIDEO STUDIO · BUSAN</small></span>
+    </div>
+    <span class="loc">BUSAN, KR</span>
+  </header>
+
+  <div class="hero">
+    <h1>이야기에서<br><em>영상까지.</em></h1>
+    <p>8년차 영상 프로듀서가<br>기획부터 납품까지 직접 이끄는<br>AI 영상 스튜디오.</p>
+    <div class="planet" aria-hidden="true">
+      <div class="ball"></div>
+      <svg viewBox="0 0 200 200" fill="none">
+        <g class="orbit">
+          <ellipse cx="100" cy="100" rx="98" ry="40" transform="rotate(-24 100 100)" stroke="#c9b4ff" stroke-width="1"/>
+          <circle cx="16" cy="128" r="7" fill="#d9ccff" stroke="#fff" stroke-width="1"/>
+        </g>
+        <ellipse cx="100" cy="100" rx="88" ry="70" transform="rotate(32 100 100)" stroke="#e2d8ff" stroke-width=".8"/>
+        <path d="M58 64l2 7 7 2-7 2-2 7-2-7-7-2 7-2z" fill="#fff"/>
+      </svg>
+    </div>
+  </div>
+
+  <section aria-labelledby="h-about">
+    <div class="sec-h"><span>01</span><h2 id="h-about">ABOUT ME</h2><div class="who" id="person"></div></div>
+    <p class="about">영화 VFX·게임 시네마틱·광고 8년차 프로듀서. 기획부터 촬영·CG·후반·납품까지 전 과정을 이끌어 왔습니다. 지금은 웹소설을 쓰고, 그 이야기를 생성형 AI로 직접 영상으로 만듭니다.</p>
+  </section>
+
+
+  <section aria-labelledby="h-career">
+    <div class="sec-h"><span>02</span><h2 id="h-career">CAREER</h2></div>
+    <ul class="cv">
+      <li><div class="co"><b>The Mill Seoul</b><i>Producer · 2022–2023</i></div><p>서울 지사 오프닝 멤버. 뉴욕·파리 글로벌 팀과 실사·하이엔드 CGI 광고 제작</p><small>Samsung · Hyundai GN7 · Sulwhasoo</small></li>
+      <li><div class="co"><b>VIVESTUDIOS</b><i>Producer · 2020–2022</i></div><p>게임 시네마틱·광고 기획부터 납품까지 총괄. 언리얼·모션캡처 파이프라인 운영</p><small>Summoners War 트레일러(단독 프로듀서, 외주사 5곳) · P4G 정상회의 · ELYON</small></li>
+      <li><div class="co"><b>Digital Idea</b><i>Project Manager · 2019–2020</i></div><p>영화 VFX 메인 PM. 2개월에 500샷 이상 납품</p><small>영화 「반도」 · 「미스터 주: 사라진 VIP」</small></li>
+      <li><div class="co"><b>4th Creative Party · WYSIWYG</b><i>VFX Coordinator</i></div><p>영화 VFX 코디네이터로 업계 시작</p></li>
+    </ul>
+    <div class="skills">
+      <span>기획 → 후반 → 납품 전 과정</span><span>Post Production 파이프라인</span><span>Unreal Engine</span><span>Motion Capture</span><span>ShotGrid</span><span>Final Cut Pro</span><span>생성형 AI 영상</span>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-make">
+    <div class="sec-h"><span>03</span><h2 id="h-make">WHAT WE MAKE</h2></div>
+    <ul class="svc">
+      <li><span class="num">01</span><div><b>IP 콘텐츠 & 영상화</b><small>웹소설·캐릭터 IP를 직접 쓰고, 영상으로 옮깁니다.</small></div></li>
+      <li><span class="num">02</span><div><b>브랜드 시네마틱</b><small>광고 프로덕션의 기획·관리 방식 그대로, AI로 더 빠르게.</small></div></li>
+      <li><span class="num">03</span><div><b>스몰 브랜드 필름</b><small>카페·음식점·작은 쇼핑몰을 위한 1분 안팎 세로 영상. 기획부터 자막·음악까지.</small></div></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="h-work">
+    <div class="sec-h"><span>04</span><h2 id="h-work">WORK LINKS</h2></div>
+    <div class="links" id="works"></div>
+  </section>
+
+  <section aria-labelledby="h-contact">
+    <div class="sec-h"><span>05</span><h2 id="h-contact">CONTACT</h2><span class="toast" id="toast" role="status" aria-live="polite"></span></div>
+    <div class="contact" id="contact"></div>
+  </section>
+
+  <footer>
+    <span class="tag">VISUAL STORIES, MADE REAL.</span>
+  </footer>
+</main>
+
+<script>
+// 내용은 여기만 고치면 됩니다. 빈 칸은 화면에 안 나와요.
+const CARD = {
+  person: "김규연 · 프로듀서",
+  works: [             // icon: yt / naver / diritto / ebook
+    { title: "AI 영상 · Yeon's Universe (유튜브)", icon: "yt", url: "https://www.youtube.com/@Yeon_Universe" },
+    { title: "웹소설 《저승에서 첫눈에 반했습니다》 네이버", icon: "naver", url: "https://novel.naver.com/challenge/list?novelId=1242029" },
+    { title: "웹소설 《저승에서 첫눈에 반했습니다》 디리토", icon: "diritto", url: "https://www.diritto.co.kr/contents/2421635" },
+    { title: "전자책 《처음 읽는 3D 파이프라인》 랫피드", icon: "ebook", url: "https://www.latpeed.com/products/Cth0g" }
+  ],
+  contact: [           // icon: phone / mail / kakao / yt / in
+    { icon: "phone", value: "010-4479-1780" },
+    { icon: "mail",  value: "tyyeeon@gmail.com" },
+    { icon: "kakao", value: "Tyyeeon", note: "카톡 ID" },
+    { icon: "yt",    value: "@Yeon_Universe", url: "https://www.youtube.com/@Yeon_Universe" },
+    { icon: "in",    value: "in/ellakim8907", url: "https://www.linkedin.com/in/ellakim8907/" }
+  ]
+};
+
+(function render(){
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const ICON = {
+    yt:      ['#e62117', '<svg viewBox="0 0 16 16" fill="#fff"><path d="M6 4.5v7l6-3.5z"/></svg>'],
+    naver:   ['#03c75a', 'N'],
+    diritto: ['#3b6fe0', 'D'],
+    ebook:   ['#8f74e0', 'M'],
+    phone:   ['#2E2E34', '<svg viewBox="0 0 16 16" fill="#fff"><path d="M4.2 2.5l2 .3.9 2.6-1.3 1a7 7 0 0 0 3.8 3.8l1-1.3 2.6.9.3 2c-.1.8-.8 1.4-1.6 1.3A10.5 10.5 0 0 1 2.9 4.1c-.1-.8.5-1.5 1.3-1.6z"/></svg>'],
+    mail:    ['#5b4fa8', '<svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.4"><rect x="2.5" y="4" width="11" height="8" rx="1.2"/><path d="M3 4.8l5 3.8 5-3.8"/></svg>'],
+    kakao:   ['#3c1e1e', '<svg viewBox="0 0 16 16" fill="#fee500"><path d="M8 3c-3 0-5.4 1.9-5.4 4.2 0 1.5 1 2.8 2.5 3.5l-.6 2.2 2.4-1.6c.4.1.7.1 1.1.1 3 0 5.4-1.9 5.4-4.2S11 3 8 3z"/></svg>'],
+    in:      ['#0a66c2', 'in']
+  };
+  const ico = k => { const [bg, g] = ICON[k] || ['#999', '•']; return `<span class="ico" style="background:${bg}" aria-hidden="true">${g}</span>`; };
+  const copyIco = '<svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><rect x="5" y="5" width="8.5" height="8.5" rx="1.5"/><path d="M3 10.5V3.8C3 3.3 3.3 3 3.8 3h6.7"/></svg>';
+
+  const p = document.getElementById("person");
+  if (CARD.person) { const [n, r] = CARD.person.split("·").map(s => s.trim()); p.innerHTML = esc(n) + (r ? ` <i>· ${esc(r)}</i>` : ""); }
+
+  document.getElementById("works").innerHTML = CARD.works.filter(w => w.title && w.url).map(w =>
+    `<a class="pill" href="${esc(w.url)}" target="_blank" rel="noopener">${ico(w.icon)}<span class="t">${esc(w.title)}</span><span class="chev" aria-hidden="true">›</span></a>`).join("");
+
+  document.getElementById("contact").innerHTML = CARD.contact.filter(c => c.value).map((c, i) => {
+    const label = c.note ? `${esc(c.value)} <small style="color:var(--muted)">${esc(c.note)}</small>` : esc(c.value);
+    const text = c.url ? `<a href="${esc(c.url)}" target="_blank" rel="noopener" style="color:inherit;text-decoration:none">${label}</a>` : label;
+    return `<div class="pill">${ico(c.icon)}<span class="t">${text}</span><button class="copy" type="button" id="copy-${i}" data-v="${esc(c.value)}" aria-label="${esc(c.value)} 복사">${copyIco}</button></div>`;
+  }).join("");
+
+  const toast = document.getElementById("toast");
+  document.addEventListener("click", e => {
+    const b = e.target.closest("button.copy"); if (!b) return;
+    const say = t => { toast.textContent = t; setTimeout(() => toast.textContent = "", 1500); };
+    const fallback = () => { const r = document.createRange(); r.selectNodeContents(b.previousElementSibling); const s = getSelection(); s.removeAllRanges(); s.addRange(r); say("선택됨"); };
+    try { navigator.clipboard.writeText(b.dataset.v).then(() => say("복사됨"), fallback); } catch { fallback(); }
+  });
+})();
+</script>
+
+</body>
+</html>
