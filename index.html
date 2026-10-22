@@ -39,6 +39,8 @@ header{display:flex;align-items:center;justify-content:space-between;gap:12px}
 .hero{position:relative;min-height:190px;display:flex;flex-direction:column;justify-content:center;gap:10px;padding-right:40%}
 .hero h1{font-weight:800;font-size:2.05rem;line-height:1.18;margin:0;letter-spacing:-.02em;text-wrap:balance}
 .hero h1 em{font-style:normal;color:var(--lav-deep)}
+.hero-name{font-size:1.15rem;font-weight:700;letter-spacing:-.01em}
+.hero-name i{font-style:normal;font-family:var(--f-latin);font-weight:500;font-size:.85rem;color:var(--lav-deep)}
 .hero p{margin:0;color:var(--muted);font-size:.9rem;line-height:1.5}
 .planet{position:absolute;right:-8px;top:50%;transform:translateY(-50%);width:44%;max-width:200px;aspect-ratio:1;pointer-events:none}
 .planet .ball{position:absolute;inset:22%;border-radius:50%;
@@ -134,6 +136,7 @@ footer .line{font-family:var(--f-serif);font-size:.92rem;color:#4a4855}
   </header>
 
   <div class="hero">
+    <div class="hero-name" id="person"></div>
     <h1>이야기에서<br><em>영상까지.</em></h1>
     <p>8년차 영상 프로듀서가<br>기획부터 납품까지 직접 이끄는<br>AI 영상 스튜디오.</p>
     <div class="planet" aria-hidden="true">
@@ -159,7 +162,7 @@ footer .line{font-family:var(--f-serif);font-size:.92rem;color:#4a4855}
   </section>
 
   <section aria-labelledby="h-about">
-    <div class="sec-h"><span>02</span><h2 id="h-about">ABOUT ME</h2><div class="who" id="person"></div></div>
+    <div class="sec-h"><span>02</span><h2 id="h-about">ABOUT ME</h2></div>
     <p class="about">영화 VFX·게임 시네마틱·광고 프로덕션에서 8년 가까이 일한 프로듀서입니다. 실사, 하이엔드 CGI, 언리얼 엔진 실시간 그래픽, 모션캡처 파이프라인을 다루며 클라이언트·아티스트·해외 지사·외주사 사이에서 기획부터 최종 납품까지 일정, 예산, 리스크를 관리해 왔습니다.</p>
     <p class="about">지금은 웹소설을 쓰고, 그 이야기를 생성형 AI로 직접 영상으로 만듭니다.</p>
     <div class="stats">
@@ -221,7 +224,7 @@ footer .line{font-family:var(--f-serif);font-size:.92rem;color:#4a4855}
 <script>
 // 내용은 여기만 고치면 됩니다. 빈 칸은 화면에 안 나와요.
 const CARD = {
-  person: "김규연 · 프로듀서",
+  person: "김규연 · Producer",
   works: [             // icon: yt / naver / diritto / ebook
     { title: "AI 영상 · Yeon's Universe (유튜브)", icon: "yt", url: "https://www.youtube.com/@Yeon_Universe" },
     { title: "웹소설 《저승에서 첫눈에 반했습니다》 네이버", icon: "naver", url: "https://novel.naver.com/challenge/list?novelId=1242029" },
