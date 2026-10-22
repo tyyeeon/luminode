@@ -113,6 +113,14 @@ footer .line{font-family:var(--f-serif);font-size:.92rem;color:#4a4855}
 .tl .pj em{font-style:normal;color:var(--charcoal);font-weight:500}
 .fg{display:flex;flex-direction:column;gap:14px}
 .fg h3{margin:0 0 6px;font-family:var(--f-latin);font-size:.66rem;letter-spacing:.2em;color:var(--muted);font-weight:600}
+.intro{margin:0;font-size:.92rem;color:#4a4855;line-height:1.7}
+.part{display:flex;flex-direction:column;gap:18px;padding:18px 16px 20px;border:1px solid var(--line);border-radius:20px;background:rgba(255,255,255,.55)}
+.part-h{display:flex;flex-direction:column;gap:2px}
+.part-h span{font-family:var(--f-latin);font-size:.62rem;letter-spacing:.22em;color:var(--lav-deep);font-weight:600}
+.part-h h2{margin:0;font-family:var(--f-latin);font-size:1.35rem;font-weight:600;letter-spacing:-.01em}
+.part-h p{margin:0;font-size:.85rem;color:var(--muted)}
+.part section{border-top:1px solid var(--line);padding-top:14px}
+.sec-h h3{margin:0;font-family:var(--f-latin);font-size:.68rem;letter-spacing:.2em;font-weight:600;color:var(--charcoal)}
 .fl{list-style:none;margin:0;padding:0;display:flex;flex-direction:column}
 .fl li{display:grid;grid-template-columns:7.5rem 1fr;gap:4px 12px;padding:10px 0;border-bottom:1px solid var(--line);align-items:baseline}
 .fl li:last-child{border-bottom:0}
@@ -152,37 +160,27 @@ footer .line{font-family:var(--f-serif);font-size:.92rem;color:#4a4855}
     </div>
   </div>
 
-  <section aria-labelledby="h-works">
-    <div class="sec-h"><span>01</span><h2 id="h-works">FILMOGRAPHY</h2></div>
-    <ul class="fl">
-      <li><b>Commercial</b><span>Samsung, Hyundai GN7, Sulwhasoo, P4G Summit and more</span></li>
-      <li><b>Game Cinematic</b><span>Summoners War, ELYON and more</span></li>
-      <li><b>Feature Film VFX</b><span>Okja, Peninsula, The Witch, The Last Princess and more <em>Around 30 feature films</em></span></li>
-    </ul>
-  </section>
+  <p class="intro">Luminode Studio는 프로듀서 김규연의 AI 영상 스튜디오입니다.<br>이야기를 쓰는 사람이 기획하고, 현장을 아는 사람이 끝까지 책임집니다.</p>
 
-  <section aria-labelledby="h-about">
-    <div class="sec-h"><span>02</span><h2 id="h-about">ABOUT ME</h2></div>
-    <p class="about">Luminode Studio는 프로듀서 김규연의 AI 영상 스튜디오입니다.</p>
-    <ul class="fl">
-      <li><b>VFX Post Producer</b><span>영화·게임·광고 <em>8+ years</em></span></li>
-      <li><b>Creator-Producer</b><span>시나리오 기획, 웹소설 집필부터 AI 영상 제작까지</span></li>
-    </ul>
-    <p class="about">이야기를 쓰는 사람이 기획하고, 현장을 아는 사람이 끝까지 책임집니다.</p>
+  <div class="part">
+    <div class="part-h"><span>01 · CAREER</span><h2>VFX Post Producer</h2><p>영화·게임·광고 VFX·후반 프로덕션</p></div>
     <div class="stats">
       <div class="stat"><b>8 years+</b><small>VFX·후반 프로덕션 경력</small></div>
       <div class="stat"><b>30편+</b><small>영화·광고·시네마틱 제작</small></div>
     </div>
-    <ul class="fl">
-      <li><b>Pipeline</b><span>VFX·후반 파이프라인 전 과정 · Unreal Engine · Motion Capture</span></li>
-      <li><b>AI Tools</b><span>ChatGPT · Claude · Kling</span></li>
-      <li><b>Production</b><span>ShotGrid · Excel · Final Cut Pro</span></li>
-    </ul>
-  </section>
 
-  <section aria-labelledby="h-career">
-    <div class="sec-h"><span>03</span><h2 id="h-career">CAREER</h2></div>
-    <ol class="tl">
+    <section aria-labelledby="h-works">
+      <div class="sec-h"><h3 id="h-works">FILMOGRAPHY</h3></div>
+      <ul class="fl">
+      <li><b>Commercial</b><span>Samsung, Hyundai GN7, Sulwhasoo, P4G Summit and more</span></li>
+      <li><b>Game Cinematic</b><span>Summoners War, ELYON and more</span></li>
+      <li><b>Feature Film VFX</b><span>Okja, Peninsula, The Witch, The Last Princess and more <em>Around 30 feature films</em></span></li>
+    </ul>
+    </section>
+
+    <section aria-labelledby="h-career">
+      <div class="sec-h"><h3 id="h-career">EXPERIENCE</h3></div>
+      <ol class="tl">
       <li class="big"><div class="co"><b>The Mill Seoul</b><i>2022.07 – 2023.12</i></div><span class="role">Producer</span>
         <ul><li>서울 지사 오프닝 멤버. 뉴욕·파리 글로벌 팀과의 협업 체계 구축</li><li>실사·하이엔드 CGI 광고의 일정, 리소스, 커뮤니케이션, 최종 납품 관리</li><li>해외 지사와 시차·소통 이슈를 조율해 글로벌 광고 딜리버리</li></ul>
         <span class="pj"><em>Samsung Gnusmas · Hyundai GN7 · Sulwhasoo 6th Generation</em></span></li>
@@ -199,24 +197,42 @@ footer .line{font-family:var(--f-serif);font-size:.92rem;color:#4a4855}
         <ul><li>데이터 인/아웃과 최종 납품 관리, ShotGrid로 라이팅 렌더 일정 트래킹</li></ul>
         <span class="pj"><em>옥자 · 아수라 · 덕혜옹주 · Once Upon a Time · 삼체 외</em></span></li>
     </ol>
-  </section>
+    </section>
 
-  <section aria-labelledby="h-make">
-    <div class="sec-h"><span>04</span><h2 id="h-make">WHAT WE MAKE</h2></div>
-    <ul class="svc">
+    <section aria-labelledby="h-skill">
+      <div class="sec-h"><h3 id="h-skill">PIPELINE · TOOLS</h3></div>
+      <ul class="fl">
+        <li><b>Pipeline</b><span>VFX·후반 파이프라인 전 과정 · Unreal Engine · Motion Capture</span></li>
+        <li><b>Production</b><span>ShotGrid · Excel · Final Cut Pro</span></li>
+      </ul>
+    </section>
+  </div>
+
+  <div class="part">
+    <div class="part-h"><span>02 · NOW</span><h2>Creator-Producer</h2><p>시나리오 기획, 웹소설 집필부터 AI 영상 제작까지</p></div>
+
+    <section aria-labelledby="h-make">
+      <div class="sec-h"><h3 id="h-make">WHAT WE MAKE</h3></div>
+      <ul class="svc">
       <li><span class="num">01</span><div><b>IP 콘텐츠 & 영상화</b><small>웹소설·캐릭터 IP를 직접 쓰고, 영상으로 옮깁니다.</small></div></li>
       <li><span class="num">02</span><div><b>브랜드 시네마틱</b><small>광고 프로덕션의 기획·관리 방식 그대로, AI로 더 빠르게.</small></div></li>
       <li><span class="num">03</span><div><b>스몰 브랜드 필름</b><small>카페·음식점·작은 쇼핑몰을 위한 1분 안팎 영상. 기획부터 자막·음악까지.</small></div></li>
     </ul>
-  </section>
+    </section>
 
-  <section aria-labelledby="h-work">
-    <div class="sec-h"><span>05</span><h2 id="h-work">NOW · LINKS</h2></div>
-    <div class="links" id="works"></div>
-  </section>
+    <section aria-labelledby="h-ai">
+      <div class="sec-h"><h3 id="h-ai">AI TOOLS</h3></div>
+      <ul class="fl"><li><b>AI Tools</b><span>ChatGPT · Claude · Kling</span></li></ul>
+    </section>
+
+    <section aria-labelledby="h-work">
+      <div class="sec-h"><h3 id="h-work">WORKS · LINKS</h3></div>
+      <div class="links" id="works"></div>
+    </section>
+  </div>
 
   <section aria-labelledby="h-contact">
-    <div class="sec-h"><span>06</span><h2 id="h-contact">CONTACT</h2><span class="toast" id="toast" role="status" aria-live="polite"></span></div>
+    <div class="sec-h"><h2 id="h-contact">CONTACT</h2><span class="toast" id="toast" role="status" aria-live="polite"></span></div>
     <div class="contact" id="contact"></div>
   </section>
 
