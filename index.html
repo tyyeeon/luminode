@@ -92,7 +92,8 @@ footer .tag{font-family:var(--f-latin);font-size:.62rem;letter-spacing:.32em;col
 footer .line{font-family:var(--f-serif);font-size:.92rem;color:#4a4855}
 
 /* stats + timeline + filmography (v2: 경력·작품 상세) */
-.stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (min-width:500px){.stats{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .stat{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:12px 10px;display:flex;flex-direction:column;gap:2px;min-width:0}
 .stat b{font-family:var(--f-latin);font-weight:600;font-size:1.35rem;color:var(--lav-deep);line-height:1.1;font-variant-numeric:tabular-nums}
 .stat small{font-size:.72rem;color:var(--muted);line-height:1.35}
@@ -112,6 +113,7 @@ footer .line{font-family:var(--f-serif);font-size:.92rem;color:#4a4855}
 .fg h3{margin:0 0 6px;font-family:var(--f-latin);font-size:.66rem;letter-spacing:.2em;color:var(--muted);font-weight:600}
 .chips{display:flex;flex-wrap:wrap;gap:6px}
 .chips span{font-size:.78rem;padding:5px 11px;border-radius:999px;background:var(--card);border:1px solid var(--line);color:var(--charcoal)}
+.more{margin:8px 0 0;font-size:.74rem;line-height:1.7;color:var(--muted)}
 .chips span small{color:var(--muted);font-size:.7rem;margin-left:4px}
 </style>
 
@@ -146,6 +148,7 @@ footer .line{font-family:var(--f-serif);font-size:.92rem;color:#4a4855}
     <p class="about">지금은 웹소설을 쓰고, 그 이야기를 생성형 AI로 직접 영상으로 만듭니다.</p>
     <div class="stats">
       <div class="stat"><b>8년</b><small>영화·게임·광고 프로덕션</small></div>
+      <div class="stat"><b>27편</b><small>장편 영화 VFX 크레딧</small></div>
       <div class="stat"><b>500+</b><small>「반도」 2개월 납품 샷</small></div>
       <div class="stat"><b>5곳</b><small>서머너즈워 단독 리드 외주사</small></div>
     </div>
@@ -178,7 +181,7 @@ footer .line{font-family:var(--f-serif);font-size:.92rem;color:#4a4855}
   <section aria-labelledby="h-works">
     <div class="sec-h"><span>03</span><h2 id="h-works">SELECTED WORKS</h2></div>
     <div class="fg">
-      <div><h3>FILM · VFX</h3><div class="chips"><span>카운트</span><span>반도</span><span>미스터 주: 사라진 VIP</span><span>옥자</span><span>아수라</span><span>덕혜옹주</span><span>마녀</span><span>스윙키즈</span><span>유럽공략</span><span>Once Upon a Time</span><span>삼체</span></div></div>
+      <div><h3>FILM · VFX · 27편</h3><div class="chips"><span>반도</span><span>백두산</span><span>싱크홀</span><span>#살아있다</span><span>옥자</span><span>아수라</span><span>마녀</span><span>안시성</span></div><p class="more">그 외 카운트 · 해적: 도깨비 깃발 · 히트맨 · 가장 보통의 연애 · 타짜: 원 아이드 잭 · 클로젯 · 미스터 주: 사라진 VIP · 스윙키즈 · 레슬러 · 물괴 · 브이아이피 · 장산범 · 불한당: 나쁜 놈들의 세상 · 보안관 · 더 킹 · 덕혜옹주 · 유럽공략 · 삼체 · Once Upon a Time</p></div>
       <div><h3>COMMERCIAL</h3><div class="chips"><span>Samsung <small>Gnusmas</small></span><span>Hyundai <small>GN7</small></span><span>Sulwhasoo <small>6th Generation</small></span><span>P4G 정상회의 <small>정부 홍보 영상</small></span></div></div>
       <div><h3>GAME CINEMATIC</h3><div class="chips"><span>Summoners War <small>트레일러</small></span><span>ELYON</span></div></div>
     </div>
